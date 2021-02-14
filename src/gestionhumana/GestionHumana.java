@@ -1,6 +1,7 @@
 package gestionhumana;
 
 import gestionhumana.pojos.XxGhUsuarios;
+import java.util.ArrayList;
 import validaciones.Camilo;
 import validaciones.Xiomara;
 
@@ -17,7 +18,16 @@ public class GestionHumana {
         
         //###########################################CAMILO
         Camilo c = new Camilo();
-        System.out.println(c.validarZero(0));
+        System.out.println("Validacion de cero  :  "+c.validarZero(0));
+        System.out.println("Cambio a Minusculas :  "+c.minusculas("JUAN CAMILO VILLA P"));
+        System.out.println("Validacion tabs     :  "+c.eliminarTabs("prueba	tab	si"));
+        String str= null;
+        ArrayList<String> array = new ArrayList<>();
+        //String resultado = c.esNuloVacio(array);
+        System.out.println("Cambio a nuloovacio :  "+c.esNuloVacio(str));
+        //System.out.println("Cambio a nuloovacio :  "+c.esNuloVacio(array));
+        System.out.println("-------------------------------------");
+        System.out.println(c.eliminarEspaciosIniciales("          a b "));
         
         
         //#################################################
@@ -34,13 +44,13 @@ public class GestionHumana {
         METODOS A IMPLEMENTAR
         ___________________________________________        
         
-        
+        --C   Validar si es Zero
         X   Eliminar saltos de linea
-        C   Eliminar Tabuladores
+        --C   Eliminar Tabuladores
         X   Eliminar espacios al incio o final de un String
-        C   Poner todo en minuscula
+        --C   Poner todo en minuscula
         X   Poner todo en mayuscula
-        C   Valdiar si un String es nulo
+        --C   Valdiar si un String es nulo
         X   Validar si un numero es negativo
         C   Validar si una lista esta vacia
         C   Validar conexion base de datos
