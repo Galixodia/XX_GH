@@ -16,6 +16,14 @@ public class XxGhUsuarios {
     private int xx_gh_usuarios_activo = 1;
     private int xx_gh_usuarios_roles_id;
 
+    public XxGhUsuarios() {
+    }
+
+    public XxGhUsuarios(int xx_gh_usuarios_id, String xx_gh_usuarios_nombre_com) {
+        this.xx_gh_usuarios_id = xx_gh_usuarios_id;
+        this.xx_gh_usuarios_nombre_com = xx_gh_usuarios_nombre_com;
+    }
+
     public int getXx_gh_usuarios_id() {
         return xx_gh_usuarios_id;
     }
