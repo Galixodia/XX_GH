@@ -1,6 +1,8 @@
 package gestionhumana;
 
 import gestionhumana.pojos.XxGhUsuarios;
+import validaciones.Camilo;
+import validaciones.Xiomara;
 
 /**
  *
@@ -12,24 +14,43 @@ public class GestionHumana {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        XxGhUsuarios Gusuarios = new XxGhUsuarios();
-        Gusuarios.setXx_gh_usuarios_id(1);
-        Gusuarios.setXx_gh_usuarios_nombre_com("Juan Camilo Villa");
         
-        XxGhUsuarios Gusuarios2 = new XxGhUsuarios(2, "Xiomara Torrez");
-        
-        Calucladora c = new Calucladora();
-        
-        c.setA(10);
-        c.setB(0);
+        //###########################################CAMILO
+        Camilo c = new Camilo();
+        System.out.println(c.validarZero(0));
         
         
-                
-//        System.out.println(c.validarZero(0));
-        System.out.println(c.suma());
-        System.out.println(c.dividir());
-        System.out.println(Gusuarios.toString());
-        System.out.println(Gusuarios2.toString());
+        //#################################################
+        
+        //###########################################XIOMI
+        Xiomara x = new Xiomara();
+        
+        
+        //#################################################
+        
+        
+        /*
+        
+        METODOS A IMPLEMENTAR
+        ___________________________________________        
+        
+        
+        X   Eliminar saltos de linea
+        C   Eliminar Tabuladores
+        X   Eliminar espacios al incio o final de un String
+        C   Poner todo en minuscula
+        X   Poner todo en mayuscula
+        C   Valdiar si un String es nulo
+        X   Validar si un numero es negativo
+        C   Validar si una lista esta vacia
+        C   Validar conexion base de datos
+        X   Validar conexion con un servidor
+        X   Validar lonqitu de un String
+        C   validar la eistencia de un archivo en una ruta
+        
+        
+        
+        */
     }
     
 }
