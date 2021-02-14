@@ -54,4 +54,10 @@ public class Calucladora {
         return resultado;
     }
     
+    public int suma(){
+        int c;
+        c = a+b;
+    return c; 
+    }
+    
 }

@@ -26,6 +26,7 @@ public class GestionHumana {
         
                 
 //        System.out.println(c.validarZero(0));
+        System.out.println(c.suma());
         System.out.println(c.dividir());
         System.out.println(Gusuarios.toString());
         System.out.println(Gusuarios2.toString());
