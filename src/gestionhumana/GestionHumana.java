@@ -17,14 +17,17 @@ public class GestionHumana {
         
         //###########################################CAMILO
         Camilo c = new Camilo();
-        System.out.println(c.validarZero(0));
+        //System.out.println(c.validarZero(0));
         
         
         //#################################################
         
         //###########################################XIOMI
         Xiomara x = new Xiomara();
-        
+        System.out.println(x.eliminarSaltoLinea("xiomara\n" + "torrez"));
+        System.out.println(x.eliminarEspacioInicial(" a b "));
+        System.out.println(x.eliminarVariosEspaciosIniciales("   1 2"));
+
         
         //#################################################
         
